@@ -1,0 +1,84 @@
+*{
+
+    --main-font-family-txt: 'Lato', sans-serif;
+    --main-font-family-title : 'Montserrat', sans-serif;
+
+    --main-font-size-title : 2rem;
+    --main-font-size-txt : 1.4rem;
+
+    --main-background-color : grey;
+    --background-color-div-slider : black;
+    --main-background-color-btn :rgb(136, 40, 40);
+    --main-color-txt : white;
+}
+
+body{
+    background-color: whitesmoke;
+    height: 100vh;
+}
+
+h1{
+    font-family: var(--main-font-family-title);
+    font-size: var(--main-font-size-title);
+    text-align: center;
+    margin: 2rem auto;
+}
+
+p{
+    font-family: var(--main-font-size-txt);
+    font-size: var(--main-font-family-txt);
+    color: var(--main-color-txt);
+    text-align: center;
+    margin: 0 auto;
+    padding: 3rem 0;
+}
+
+.section--slider--btn{
+
+    background-color: var(--background-color-div-slider);
+}
+
+
+.slider{
+    border: 1px solid white;
+    width: 60%;
+    max-width: 500px;
+    min-width: 300px;
+    /* background-image: url(../image/image2.jpg); */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+    min-height: 300px;
+    max-height: 500px;
+    margin: 2rem auto;
+}
+
+
+.flex-btn {
+	display: flex;
+	justify-content: center;
+}
+
+.btn{
+    margin-left: 50px;
+    width: 100px;
+    height: 35px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-family: var(--main-font-family-title);
+    color: var(--main-color-txt);
+    background-color: var(--main-background-color-btn);
+    cursor: pointer;
+    border: none;
+    border-radius : 10px;
+    box-shadow: 1px 1px 10px white;
+}
+
+.btn:hover{
+   
+    color: var(--main-background-color-btn);
+    background-color: var( --main-color-txt);
+    
+    box-shadow: 1px 1px 10px white;
+}
