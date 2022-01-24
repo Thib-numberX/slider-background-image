@@ -22,7 +22,7 @@ const slider = {
             // ici les deux méthodes qui vont être créées :
             //création de l'image
 
-            slider.createImage();
+            slider.createImage(2);
 
             //puis la méthode pour cibler et écouter les btn
 
@@ -40,16 +40,20 @@ const slider = {
 
             //cibler l'élément dans le DOM où va être insérer l'image
             const newImageBackElement = document.querySelector('.slider');
+            // let indexTableauImages = slider.sliderImages.indexOf(imageCurrent)
             const imageCurrent = slider.sliderImages;
             newImageBackElement.style.backgroundImage = "url(../image/" + imageCurrent[index] + ".jpg)";
             // console.log (newImageBackElement);
 
             // Il faut parcourir le tableau, un boucle for...of... et ainsi le stocker dans dans une variable
 
-            // for ( const imageCurrent of slider.sliderImages){
+            // for ( const imageCurrent in slider.sliderImages){
             //     console.log (imageCurrent);
+            //     let indexTableauImages = slider.sliderImages.indexOf(imageCurrent)
+            //     console.log(indexTableauImages);
+                
             // // il faut mettre un index à imageCurrent, le tableau indexé doit le permettre.
-            // newImageBackElement.style.backgroundImage = "url(../image/" + imageCurrent + ".jpg)";
+            // newImageBackElement.style.backgroundImage = "url(../image/" + slider.sliderImages[imageCurrent] + ".jpg)";
             //  //Si on utilise for ... in, nous avons l'index de récupéré.
             // // newImageBackElement.style.backgroundImage = "url(../image/image" + imageCurrent + ".jpg)";
             // //     console.log (newImageBackElement.style.backgroundImage);     
